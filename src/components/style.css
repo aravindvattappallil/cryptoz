@@ -1,0 +1,8 @@
+.flex-5-cols {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .flex-5-cols > * {
+    width: 20%;
+    box-sizing: border-box;
+  }
