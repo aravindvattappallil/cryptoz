@@ -13,12 +13,14 @@ const Cards =(props)=>{
       
       <List sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
       <ListItem>
+      <h3 className='rank' sx ={{p:"0px", width:"10px"}} >{props.coin.score+1} . </h3>
         <ListItemAvatar>
           <Avatar  src ={props.coin.small}>
             <ImageIcon/>
           </Avatar>
         </ListItemAvatar>
-        <ListItemText primary={props.coin.name} secondary={parseFloat(props.coin.data.price).toFixed(3)} />
+        <ListItemText primary={props.coin.name + ""+"("+props.coin.symbol+")"}  secondary={parseFloat(props.coin.data.price).toFixed(3)} />
+       
       </ListItem>
       
     </List>

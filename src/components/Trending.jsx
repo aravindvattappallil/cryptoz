@@ -20,7 +20,8 @@ const getTrending = async ()=>{
     try{
         const response= await axios.get(apiURL);
         setTrendingList(response.data.coins);
-        console.log(response.data.coins)
+        console.log(response.data)
+        
        
     
     }
@@ -43,6 +44,7 @@ const getTrending = async ()=>{
       </div>
        
       {/* </Stack> */}
+     
     </Box>
   );
 };

@@ -1,8 +1,25 @@
 .flex-5-cols {
-    display: flex;
+
     flex-wrap: wrap;
   }
   .flex-5-cols > * {
-    width: 20%;
+    width: 50%;
     box-sizing: border-box;
+  }
+  .rank{
+    padding-right: 2%;
+  }
+  .image_icon{
+    width: 5%;
+  }
+  .parent_coin{
+    display: flex;
+   flex-direction: row;
+  
+   
+  }
+  .market_name_row{
+ margin-top: 1%;
+ margin-left: 2%;
+    
   }
