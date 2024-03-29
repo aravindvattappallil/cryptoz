@@ -31,19 +31,21 @@ const getTrending = async ()=>{
 }
     
   return (
-    <Box>
-      <h3>Trending</h3>
+    <Box sx={{ml:4,mt:1,}}>
+      <h1>Trending Coin</h1>
       {/* <Stack
         direction={{ xs: 'column', sm: 'colum' }}
         spacing={{ md:.5}}
       > */}
-      <div className='flex-5-cols'>
+      <div className='flex-5-cols' >
       {trendingList.map((coin, index) => (
          <Cards key={index} coin= {coin.item}/>
         ))}
       </div>
+      
        
       {/* </Stack> */}
+      {/* <Cards coin={trendingList}/> */}
      
     </Box>
   );

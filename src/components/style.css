@@ -1,6 +1,7 @@
 .flex-5-cols {
-
+    display: flex;
     flex-wrap: wrap;
+    margin-left: 5%;
   }
   .flex-5-cols > * {
     width: 50%;
@@ -14,12 +15,16 @@
   }
   .parent_coin{
     display: flex;
-   flex-direction: row;
-  
+   flex-direction: row
    
   }
   .market_name_row{
  margin-top: 1%;
- margin-left: 2%;
+ margin-left: 1%;
     
   }
+  .market_box{
+   margin-left: 3%; 
+   margin-right: 3%;
+  }
+ 

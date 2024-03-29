@@ -18,19 +18,20 @@ const Market = () => {
       const response = await axios.get(apiURL);
 
       setMarketList(response.data);
+      console.log(marketList)
     } catch (err) {
       console.log(err);
     }
   };
 
   return (
-    <div>
+    <div className="market_box"> 
       <h1>Market</h1>
       {/* <button onClick={handleMarketData }>load</button> */}
       {/* {marketList.map((coin,index)=>(
                 <BasicTable key={coin.id} coin={coin}/>
             ))} */}
-      <BasicTable coin={marketList} />
+      <div className="markrt_table"><BasicTable coin={marketList} /></div>
     </div>
   );
 };

@@ -8,8 +8,7 @@ function App() {
   return (
     <div >
      <NavigationBar/>
-     {/* <Trending/> */}
-     <Market/>
+
     </div>
   );
 }
